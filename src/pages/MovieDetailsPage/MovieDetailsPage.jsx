@@ -10,7 +10,7 @@ import {
 import { fetchMovie } from '../../services/fetchAPI';
 
 const MovieCard = lazy(() => import('../../components/MovieCard'));
-const AdditionNav = lazy(() => import('../../components/AdditionNav'));
+const DetailsNav = lazy(() => import('../../components/DetailsNav'));
 const Cast = lazy(() => import('../../components/Cast'));
 const Reviews = lazy(() => import('../../components/Reviews'));
 
@@ -44,7 +44,7 @@ export default function MovieDetailsPage() {
             <MovieCard film={film} />
             <hr />
             <p>Additional information</p>
-            <AdditionNav movieId={movieId} />
+            <DetailsNav movieId={movieId} />
           </Suspense>
           <hr />
           <Suspense fallback={<h2>Loading...</h2>}>

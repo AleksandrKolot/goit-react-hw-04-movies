@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchActors } from '../../services/fetchAPI';
-import missingImg from '../../images/missingImg.svg';
+import missingImg from '../../images/missingImg.jpg';
 import s from './Cast.module.css';
 
 export default function Cast() {
